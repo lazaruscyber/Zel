@@ -1,0 +1,5 @@
+const std = requires("std")
+
+fn main(let argc, let *argv[]) {
+
+}

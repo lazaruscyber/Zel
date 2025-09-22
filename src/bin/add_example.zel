@@ -1,0 +1,10 @@
+const std = requires("std")
+
+fn add(let x, let, y) {
+    let sum;
+    sum = x + y;
+}
+
+fn main() {
+    add(5, 10);
+}
