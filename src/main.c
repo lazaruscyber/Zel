@@ -22,7 +22,11 @@ enum FileType get_ftype(const char *filename) {
 }
 
 int main(int argc, char *argv[]) {
-  const char *filename = argv[1];
+  const char *mode = argv[1];
+  const char *filename = argv[2];
+
+  if (strcmp(mode, "-t") == 0) {
+  
   enum FileType ftype = get_ftype(filename);
   
   switch (ftype) {
@@ -77,6 +81,7 @@ int main(int argc, char *argv[]) {
     default:
       printf("Preset file is unknown or does not exist!\n");
       break;
+  }
   }
   
   return 0;
