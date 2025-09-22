@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "lexer.h"
 
 enum FileType {
   FILE_MAIN,
@@ -15,18 +16,34 @@ enum FileType get_ftype(const char *filename) {
   if (strcmp(filename, "add_example.zel") == 0) {
     return FILE_ADD_EXAMPLE;
   }
-  if (strcmp(filename, "oop_example") == 0) {
+  if (strcmp(filename, "oop_example.zel") == 0) {
     return FILE_OOP_EXAMPLE;
   }
   return FILE_UNKNOWN;
 }
 
 int main(int argc, char *argv[]) {
+  // declare parameters
   const char *mode = argv[1];
   const char *filename = argv[2];
 
-  if (strcmp(mode, "-t") == 0) {
+  // Limit command parameters
+  if (argc < 2) {
+    perror("Command must be 3 or more arguements!");
+  }
+
+  // Lexer Logic
+  if (strcmp(mode, "-b") == 0) {
+    FILE *zelfile = fopen("main.zel", "r");
+    const char *cursor;
+    init_lexer("main.zel", cursor);
+  }
+
   
+
+  // declare -t command
+  if (strcmp(mode, "-t") == 0) {
+
   enum FileType ftype = get_ftype(filename);
   
   switch (ftype) {
