@@ -34,9 +34,8 @@ int main(int argc, char *argv[]) {
 
   // Lexer Logic
   if (strcmp(mode, "-b") == 0) {
-    FILE *zelfile = fopen("main.zel", "r");
     const char *cursor;
-    init_lexer("main.zel", cursor);
+    init_lexer(filename, cursor);
   }
 
   
