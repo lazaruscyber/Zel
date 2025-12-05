@@ -1,7 +1,5 @@
 # Zel Programming Language
 
-[![Join the Discord](https://img.shields.io/discord/123456789?label=Join%20Discord\&style=for-the-badge)](https://discord.gg/quqwft5jNn)
-
 Zel is a **low-level, statically and strongly typed transpiled programming language** designed for simplicity, speed, and minimal boilerplate. Zel combines the power of low-level programming with modern features such as polymorphism (without traditional OOP) and a robust type system inspired by OCAML. Its goal is to provide developers a language that is fast, safe, and expressive while remaining clean and approachable.
 
 ---
