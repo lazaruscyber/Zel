@@ -1,11 +1,13 @@
+## DISCLAIMER
+
+The Zel Project has been discontinued to allow time for me to work on the PyLisp Compiler.
+Check it out on my pinned repos.
+------------------------
 # Zel Programming Language
 
 Zel is a **low-level, statically and strongly typed transpiled programming language** designed for simplicity, speed, and minimal boilerplate. Zel combines the power of low-level programming with modern features such as polymorphism (without traditional OOP) and a robust type system inspired by OCAML. Its goal is to provide developers a language that is fast, safe, and expressive while remaining clean and approachable.
 
 ---
-## NEW CHANGES FOR 2026
-
-Zel's overall design will be changed in 2026 to be more unique. I want to make sure Zel is not similar to other languages. I want to create a reason for why people should use Zel once released in a good state.
 ---
 
 ## Table of Contents
